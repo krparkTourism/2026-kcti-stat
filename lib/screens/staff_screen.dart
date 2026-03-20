@@ -335,18 +335,24 @@ class StaffScreen extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          DataTable2(
-            headers: const ['연도', '1등급', '2등급', '3등급', '4등급', '5등급', '합계'],
-            rows: KctiData.staffRating.map((r) => [
-              '${r['year']}',
-              '${r['g1']}',
-              '${r['g2']}',
-              '${r['g3']}',
-              '${r['g4']}',
-              '${r['g5']}',
-              '${r['total']}',
-            ]).toList(),
-            highlightRows: const [3],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: SizedBox(
+              width: 590,
+              child: DataTable2(
+                headers: const ['연도', '1등급', '2등급', '3등급', '4등급', '5등급', '합계'],
+                rows: KctiData.staffRating.map((r) => [
+                  '${r['year']}',
+                  '${r['g1']}',
+                  '${r['g2']}',
+                  '${r['g3']}',
+                  '${r['g4']}',
+                  '${r['g5']}',
+                  '${r['total']}',
+                ]).toList(),
+                highlightRows: const [3],
+              ),
+            ),
           ),
           const SizedBox(height: 12),
           const Text(
