@@ -285,7 +285,7 @@ class StaffScreen extends StatelessWidget {
                 ),
               ),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     width: 48,
@@ -316,16 +316,6 @@ class StaffScreen extends StatelessWidget {
                         color: Colors.white,
                         fontSize: 11,
                         fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      item['names'] as String,
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.grey.shade700,
                       ),
                     ),
                   ),

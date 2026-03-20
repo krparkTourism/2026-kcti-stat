@@ -121,15 +121,21 @@ class _ResearchScreenState extends State<ResearchScreen>
             title: '연구 유형별 건수 (2023~2025)',
             icon: Icons.science,
             padding: const EdgeInsets.all(16),
-            child: DataTable2(
-              headers: const ['구분', '2023', '2024', '2025'],
-              rows: KctiData.researchCount.map((r) => [
-                r['type'] as String,
-                '${r['y2023']}',
-                '${r['y2024']}',
-                '${r['y2025']}',
-              ]).toList(),
-              highlightRows: const [7, 8, 9, 10],
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SizedBox(
+                width: 360,
+                child: DataTable2(
+                  headers: const ['구분', '2023', '2024', '2025'],
+                  rows: KctiData.researchCount.map((r) => [
+                    r['type'] as String,
+                    '${r['y2023']}',
+                    '${r['y2024']}',
+                    '${r['y2025']}',
+                  ]).toList(),
+                  highlightRows: const [7, 8, 9, 10],
+                ),
+              ),
             ),
           ),
           const SizedBox(height: 8),
