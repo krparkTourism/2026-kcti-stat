@@ -33,9 +33,9 @@ class StaffScreen extends StatelessWidget {
             children: [
               _buildKpiCard('정원', '139명', '원장 포함'),
               const SizedBox(width: 12),
-              _buildKpiCard('현원', '128명', '2026.2.2 기준'),
+              _buildKpiCard('현원', '129명', '2026.4.22 기준'),
               const SizedBox(width: 12),
-              _buildKpiCard('결원', '11명', '충원 필요'),
+              _buildKpiCard('결원', '10명', '충원 필요'),
             ],
           ),
         ],
