@@ -19,7 +19,7 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "5e27aae346eee469027c80af0
 "flutter_bootstrap.js": "202ea8e4ad8129245c0e88ba269347ef",
 "index.html": "bcdb3c966fadd91dc049cffa52465b68",
 "/": "bcdb3c966fadd91dc049cffa52465b68",
-"main.dart.js": "e1792680bc1ecfdc9c0de916b3aa6a6e",
+"main.dart.v202607060525.js": "e1792680bc1ecfdc9c0de916b3aa6a6e",
 "version.json": "c67cd6e46cd1db1ce11940e79bb7df9a",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "33b7d9392238c04c131b6ce224e13711",
 "assets/fonts/MaterialIcons-Regular.otf": "5f0e7af0dd7339def4504099e82488e0",
@@ -37,7 +37,7 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "5e27aae346eee469027c80af0
 "manifest.json": "13dd649f9765e96a5b8bd02592823538"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = ["main.dart.js",
+const CORE = ["main.dart.v202607060525.js",
 "index.html",
 "flutter_bootstrap.js",
 "assets/AssetManifest.bin.json",
